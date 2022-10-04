@@ -4,14 +4,14 @@
 - Clone this on your local machine _(Mandatory)_
 
 ```
-git clone https://github.com/{username}/Hacktober_Fest_webDev_Project
+git clone https://github.com/{username}/SmallWorkingProjects_Hacktoberfest22
 
 ```
 
 - Navigate to project directory.
 
 ```
-cd Hacktober_Fest_webDev_Project
+cd SmallWorkingProjects_Hacktoberfest22
 
 ```
 
@@ -48,7 +48,8 @@ git push origin my-new-branch
 An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PR's may be merged while you're working on your branch/fork.
 
 ```terminal
-git remote add upstream https://github.com/{Username}/Hacktober_Fest_webDev_Project
+git remote add upstream https://github.com/{Username}/SmallWorkingProjects_Hacktoberfest22
+
 
 ```
 
