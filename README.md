@@ -21,16 +21,13 @@ https://hacktoberfest.digitalocean.com/
 -----
 ## What can I contribute?
 You can add your projects, or any valid programs(please don't add too basic codes or any algorithm/DSA question) under any language. Just make sure to add the file under the correct directory.
+#### Each Project should be added in their own directory. (Please maintain a clean file structure).
 
 ### NO CP/DSA ques acceptable. Program added should perform a real world relevent solution.
-
-##### Add stuff only relevent to the main website. Every new addition should be integrated with main index.html file so that its accessible from there.
 #### Any PR not following the Contribution rules will be labelled "invalid"
 -----
 #### Instructions:
-* Make sure you have a GitHub account. In case you don't have one, you can create your account by visiting https://github.com/ and clicking on Sign up option at the top right corner.
-* Register yourself for Hacktoberfest from the above link.
-* Now its time for your contribution! Follow the steps below:
+* Time for your contribution! Follow the steps below:
 * Fork the repository (Top right corner of this repo)
 * Clone the forked repository to your local machine.
 ```markdown
