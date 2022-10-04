@@ -3,7 +3,7 @@ Open to PRs for Hacktober Fest 2022. Only Genuine PRs will be accepted.
 
 ## Any PR not following the Contribution rules will be labelled "invalid"
 ### NO CP/DSA ques acceptable. Program added should perform a real world relevent solution.
-### * Checkout "What can I contribute?" section for more details.
+### Checkout "What can I contribute?" section for more details.
 
 # Hacktoberfest2022
 Hacktoberfest® is open to everyone in the global community. It encourages participation in the open source community, which grows bigger every year. Complete the 2022 challenge and earn a limited edition T-shirt.
