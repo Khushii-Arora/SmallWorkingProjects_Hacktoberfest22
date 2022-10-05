@@ -1,0 +1,2 @@
+DINO RUN GAME IN PYTHON
+- pygame module requried
