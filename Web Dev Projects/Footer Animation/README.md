@@ -1,11 +1,10 @@
 # footer-animation
 ### Hii!👋🏻 Thanks for checking this out.
 ### This is a frontend project to build a simple footer wave animation 😊 
-<br/>
-
-<video src="./Designs/footer_animation.mp4" width="100%" height="100%" controls></video>
 
 <br/>
+
+https://user-images.githubusercontent.com/92203629/194012211-a4e6d580-6c87-4d94-aa39-6a309323822f.mp4
 
 # Technologies Used
 - ### HTML
