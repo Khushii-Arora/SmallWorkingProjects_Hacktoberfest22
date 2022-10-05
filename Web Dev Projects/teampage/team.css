@@ -1,0 +1,34 @@
+body{
+    background-color: bisque;
+    background-image: url('download.png');
+}
+.card{
+    background-color: rgb(53, 230, 103);
+    border-radius: 10px;
+}
+#mainNavbar{
+    background-color: rgb(199, 28, 165);
+
+}
+#mainNavbar a{
+    color: white;
+    font-weight: 400
+    
+}
+#mainNavbar a:hover{
+    color: rgb(18, 18, 17);
+    
+}
+.line{
+    margin-bottom: 20;
+}
+.card-img-top{
+    margin-top: 1.5rem;
+    border-radius: 10px;
+}
+.card-title{
+    color: rgb(239, 255, 146);
+}
+.card-text{
+    color: rgb(104, 5, 89);
+}
