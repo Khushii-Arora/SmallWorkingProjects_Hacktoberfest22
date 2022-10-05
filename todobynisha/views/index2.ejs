@@ -1,0 +1,36 @@
+<%- include("header.ejs") -%>
+    <div class="toDoApp">
+        <header class="header">
+            <h1>
+                <%= listTitle %>
+            </h1>
+        </header>
+        <div class="input-container">
+            <form action="/" method="post">
+                <input type="text" name="task" placeholder="New task" autocomplete="off"></input>
+                    <button class="add-icon" name="list" value="<%= listTitle %>" type="submit"></button>
+            </form>
+        </div>
+        <hr>
+        <hr>
+        <div class="tasks">
+            <% item.forEach(function (item) {%>
+                <form action="/delete" method="post">
+                    <div id="list" class="list">
+                        <p class="item">
+                            <%= item.name %>
+                        </p>
+                        <input class="close" type="checkbox" name="checkbox" value="<%= item._id %>" onchange="this.form.submit()"></input>
+                    </div>
+                    <input type="hidden" name="listName" value="<%= listTitle %>">
+                </form>
+                <%}) %>
+                <hr>
+                
+                
+            </div>
+        </div>
+      
+      
+
+<%- include("footer.ejs") -%>
