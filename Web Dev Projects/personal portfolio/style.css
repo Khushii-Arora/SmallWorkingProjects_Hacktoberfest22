@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.sidebar{
+    /* background-color: red; */
+    background-color: rgb(201, 193, 193);
+    width: 455px;
+    font-family: 'Inter Tight', sans-serif;
+}
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+}
+.sidebar nav{
+    padding: 18px;
+    height: 100vh;
+
+}
+.sidebar nav ul li{
+    list-style-type: none;
+    font-size: 30px;
+    padding: 33px 0px;
+    
+}
+.container{
+    display: flex;
+}
+.myinfo{
+    height: 58vh;
+    width: 80vw;
+    /* background-color: pink; */
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    margin: 65px auto;
+    justify-content: space-around;
+}
+.devpic img{
+    
+    height: 58vh;
+}
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hello{
+    font-size: 65px;
+}
+.name{
+    font-size: 50px;
+    /* font-family: 'Source Code Pro', monospace;*/
+    font-weight: bolder;
+
+}
+.about{
+    font-size: 35px;
+}
+.moreabout{
+    font-size: 22px;
+    margin-top: 20px;
+}
+.buttons{
+    margin: 24px;
+}
+.buttons button{
+    padding: 8px 8px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(56, 127, 220);
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: white;
+    color: rgb(56, 127, 220);
+}
+.sidebar nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.contactform{
+    font-family: 'Inter Tight', sans-serif;
+    padding: 0px 30px;
+    padding-top: 144px;
+    
+}
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
