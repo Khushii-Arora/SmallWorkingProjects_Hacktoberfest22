@@ -66,7 +66,7 @@
 .buttons{
     margin: 24px;
 }
-.buttons button{
+.btn{
     padding: 8px 8px;
     border-radius: 20px;
     color: white;
@@ -76,7 +76,7 @@
     margin: 0px 3px;
     cursor: pointer;
 }
-.buttons button:hover{
+.btn:hover{
     background-color: white;
     color: rgb(56, 127, 220);
 }
@@ -92,5 +92,44 @@
 }
 .contactform h1{
     font-family: 'Source Code Pro', monospace;
-    text-align: center;
+    padding: 10px 0;
+    font-weight: bolder;
+}
+.contactform form div{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+#emailHelp{
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+.contactform form div input{
+    width: 26vw;
+    margin: 6px 0 0 0;
+    padding: 3px;
+    border-radius: 4px;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 20px;
+    margin: 4px 0;
+}
+.blogItem{
+    margin: 20px;
+    font-family: 'Inter Tight', sans-serif;
+}
+.blogcontainer h1{
+    font-family: 'Inter Tight', sans-serif;
+    margin: 23px;
+
+}
+.blogItem p{
+    font-family: 'Source Code Pro', monospace;
+     
 }
