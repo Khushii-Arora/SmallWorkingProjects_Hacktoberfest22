@@ -14,4 +14,4 @@ Algorithms Used
 
 I my case, I got higgest accuracy for **Random Forest** i.e. 95%
 
-<a href=""E:\SmallWorkingProjects_Hacktoberfest22\Machine Learning Projects\Diabetes Prediction Using ML\result.png"" alt="image"></a>
+<a href="SmallWorkingProjects_Hacktoberfest22/Machine Learning Projects/Diabetes Prediction Using ML/result.png" alt="image"></a>
