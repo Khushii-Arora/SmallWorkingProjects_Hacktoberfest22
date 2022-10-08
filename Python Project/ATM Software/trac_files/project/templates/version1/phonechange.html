@@ -1,0 +1,66 @@
+<html>
+	<head>
+<script type="text/javascript">
+function validateForm(){
+var x=document.forms["input"]["cardnumber"].value;
+if (x==null || x=="")
+  {
+  alert("cardnumber is not filled");
+  return false;
+  }
+if (!IsNumeric(x))
+  {
+  alert("input should be numeric");
+  return false;
+  }
+if (x.length !=12)
+  {
+  alert("cardnumber must be of length 12");
+  return false;
+  }     
+}
+function validate(y){
+var x=document.getElementById(y).value;
+if (x==null || x==""){
+		document.getElementById("demo1").innerHTML="THIS FIELD MUST BE FILLED";
+	}
+if (!IsNumeric(x)){
+		document.getElementById("demo1").innerHTML="INPUT SHOULD BE NUMERICAL";
+  }
+else if (x.length !=4){
+		document.getElementById("demo1").innerHTML="INPUT SHOULD BE OF LENGTH 4";
+  }  
+else{
+		document.getElementById("demo1").innerHTML="";
+	}     
+}
+function IsNumeric(strString){
+   var strValidChars = "0123456789";
+   var strChar;
+   var blnResult = true;
+
+   if (strString.length == 0) return false;
+
+   //  test strString consists of valid characters listed above
+   for (i = 0; i < strString.length && blnResult == true; i++)
+      {
+      strChar = strString.charAt(i);
+      if (strValidChars.indexOf(strChar) == -1)
+         {
+         blnResult = false;
+         }
+      }
+   return blnResult;
+   }
+</script>
+</head>
+<body>
+<center>
+	<form name="input" action="/user/changephone/" <!--onsubmit="return validateForm() --> method="get">
+    ENTER PHONE NO: <input type="password" name="phoneno" id="phoneno" onchange="validate(this.id)"/><p id="demo1"></p></br>
+    <input type="submit" value="Submit" />
+    </form>
+</center>
+</body>
+</html>
+

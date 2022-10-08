@@ -1,0 +1,102 @@
+<html>
+	<head>
+<script type="text/javascript">
+function validateForm(){
+var x=document.forms["input"]["cardnumber"].value;
+if (x==null || x=="")
+  {
+  alert("cardnumber is not filled");
+  return false;
+  }
+if (!IsNumeric(x))
+  {
+  alert("input should be numeric");
+  return false;
+  }
+if (x.length !=12)
+  {
+  alert("cardnumber must be of length 12");
+  return false;
+  }     
+}
+function validate(y){
+var x=document.getElementById(y).value;
+if (x==null || x==""){
+	if(y=="pincode"){
+		document.getElementById("demo1").innerHTML="THIS FIELD MUST BE FILLED";
+		}
+	else if(y=="newpincode"){
+		document.getElementById("demo2").innerHTML="THIS FIELD MUST BE FILLED";
+		}
+	else{
+		document.getElementById("demo3").innerHTML="THIS FIELD MUST BE FILLED";
+		}		
+	}
+if (!IsNumeric(x)){
+	if(y=="pincode"){
+		document.getElementById("demo1").innerHTML="INPUT SHOULD BE NUMERICAL";
+		}
+	else if(y=="newpincode"){
+		document.getElementById("demo2").innerHTML="INPUT SHOULD BE NUMERICAL";
+		}
+	else{
+		document.getElementById("demo3").innerHTML="INPUT SHOULD BE NUMERICAL";
+		}
+  
+  	
+  }
+else if (x.length !=4){
+	if(y=="pincode"){
+		document.getElementById("demo1").innerHTML="INPUT SHOULD BE OF LENGTH 4";
+		}
+	else if(y=="newpincode"){
+		document.getElementById("demo2").innerHTML="INPUT SHOULD BE OF LENGTH 4";
+		}
+	else{
+		document.getElementById("demo3").innerHTML="INPUT SHOULD BE OF LENGTH 4";
+		}		
+  }  
+else{
+	if(y=="pincode"){
+		document.getElementById("demo1").innerHTML="";
+		}
+	else if(y=="newpincode"){
+		document.getElementById("demo2").innerHTML="";
+		}
+	else{
+		document.getElementById("demo3").innerHTML="";
+		}		
+	}     
+}
+function IsNumeric(strString){
+   var strValidChars = "0123456789";
+   var strChar;
+   var blnResult = true;
+
+   if (strString.length == 0) return false;
+
+   //  test strString consists of valid characters listed above
+   for (i = 0; i < strString.length && blnResult == true; i++)
+      {
+      strChar = strString.charAt(i);
+      if (strValidChars.indexOf(strChar) == -1)
+         {
+         blnResult = false;
+         }
+      }
+   return blnResult;
+   }
+</script>
+</head>
+<body>
+<center>
+	<form name="input" action="/user/changepin/" <!--onsubmit="return validateForm() --> method="get">
+    PINCODE: <input type="password" name="pincode" id="pincode" onchange="validate(this.id)"/><p id="demo1"></p></br>
+    NEW PINCODE: <input type="password" name="newpincode" id="newpincode" onchange="validate(this.id)"/><p id="demo2"></p></br>
+    CONFIRM PINCODE: <input type="password" name="confirmpincode" id="confirmpincode" onchange="validate(this.id)"/><p id="demo3"></p></br>
+    <input type="submit" value="Submit" />
+    </form>
+</center>
+</body>
+</html>
+

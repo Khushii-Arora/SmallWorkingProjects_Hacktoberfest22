@@ -1,0 +1,70 @@
+<html>
+<head>
+<script type="text/javascript">
+function validateForm(){
+var x=document.forms["input"]["pincode"].value;
+if (x==null || x=="")
+  {
+  alert("form is not filled");
+  return false;
+  }
+if (!IsNumeric(x))
+  {
+  alert("input should be numeric");
+  return false;
+  }
+if (x.length !=4)
+  {
+  alert("input must be of length 4");
+  return false;
+  }     
+}
+function validate(y){
+var x=document.getElementById(y).value;
+if (x==null || x==""){
+  document.getElementById("demo").innerHTML="THIS FIELD MUST BE FILLED";
+  }
+if (!IsNumeric(x))
+  {document.getElementById("demo").innerHTML="INPUT SHOULD BE NUMERICAL";
+  }
+else if (x.length !=4)
+  {
+  document.getElementById("demo").innerHTML="INPUT SHOULD BE OF LENGTH 4";
+  }  
+else{
+	document.getElementById("demo").innerHTML="";
+	}     
+}
+function IsNumeric(strString){
+   var strValidChars = "0123456789";
+   var strChar;
+   var blnResult = true;
+
+   if (strString.length == 0) return false;
+
+   //  test strString consists of valid characters listed above
+   for (i = 0; i < strString.length && blnResult == true; i++)
+      {
+      strChar = strString.charAt(i);
+      if (strValidChars.indexOf(strChar) == -1)
+         {
+         blnResult = false;
+         }
+      }
+   return blnResult;
+   }
+</script>
+</head>
+<body>
+<center>{% if p %}
+    <form name="input" action="/user/validatepin/" <!--onsubmit="return validateForm() --> method="get">
+    PINCODE: <input type="password" name="pincode" id="pincode" onchange="validate(this.id)"/>
+    <input type="submit" value="Submit" />
+    </form>
+    <p id="demo"></p>
+{% else %}
+    <p>Not a valid CARD NUMBER.</p>
+{% endif %}
+</center>
+</body>
+</html>
