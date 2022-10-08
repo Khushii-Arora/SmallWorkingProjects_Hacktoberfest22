@@ -11,6 +11,14 @@
     width: 455px;
     font-family: 'Inter Tight', sans-serif;
 }
+img{
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10vh;
+    box-shadow: black 10px 10px;
+}
+
 .main{
     /* background-color: yellow; */
     width: 90vw;
@@ -32,16 +40,14 @@
 .myinfo{
     height: 58vh;
     width: 80vw;
+ 
     /* background-color: pink; */
     font-family: 'Source Code Pro', monospace;
     display: flex;
-    margin: 65px auto;
+    margin: 65px 75px;
     justify-content: space-around;
 }
-.devpic img{
-    
-    height: 58vh;
-}
+
 .devinfo{
     display: flex;
     justify-content: center;
