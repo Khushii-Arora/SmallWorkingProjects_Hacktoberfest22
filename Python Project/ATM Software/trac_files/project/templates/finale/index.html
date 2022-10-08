@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>XYZ Bank : ATM</title>
+    <meta name="description" content="">
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      /* Override some defaults */
+      html, body {
+        background-color: #eee;
+      }
+      body {
+        padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
+      }
+      .container > footer p {
+        text-align: center; /* center align it with the container */
+      }
+      .container {
+        width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
+      }
+
+      /* The white background content wrapper */
+      .content {
+        background-color: #fff;
+        padding: 20px;
+        margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+        -webkit-border-radius: 0 0 6px 6px;
+           -moz-border-radius: 0 0 6px 6px;
+                border-radius: 0 0 6px 6px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+                box-shadow: 0 1px 2px rgba(0,0,0,.15);
+      }
+
+      /* Page header tweaks */
+      .page-header {
+        background-color: #f5f5f5;
+        padding: 20px 20px 10px;
+        margin: -20px -20px 20px;
+      }
+
+      /* Styles you shouldn't keep as they are for displaying this base example only */
+      .content .span10,
+      .content .span4 {
+        min-height: 500px;
+      }
+      
+      .span10 p{
+        font-size: 14px; 
+      }
+      
+      /* Give a quick and non-cross-browser friendly divider */
+      .content .span4 {
+        margin-left: 0;
+        padding-left: 19px;
+        border-left: 1px solid #eee;
+      }
+
+      .topbar .btn {
+        border: 0;
+      }
+    
+     .actionsNew {
+        padding-top : 10px;
+        padding-left : 220px;
+        padding-bottom: 0px;
+      }
+      
+      .well {
+        width : 90%;
+      }
+      
+    </style>
+    <script type="text/javascript" src="/static/js/jquery.min.js">
+    </script>
+  </head>
+  
+  <body>
+      <div class="container">
+        <div class="content">
+          <div class="page-header">
+            <h1>XYZ Bank ATM<small>    Its Complicated</small></h1>
+          </div>
+          <div class="row">
+            <div class="span10">
+              <h3>Hello user !</h3>
+              <p> Please enter your 12 digit card ATM Card Number and press 'NEXT'</p>
+              <div class="well">
+              {% if cmessage == 1 %}
+                <div class="alert-message error"><p><strong>Invalid card number!!</strong></strong></p></div>
+              <script type="text/javascript">
+                $(document).ready(function() {
+                $('#cardform').hide();
+                window.setTimeout("location.href='/user/'", 2000);
+                });
+              </script>
+              {% else %} {% if cmessage == 2 %}
+              <div class="alert-message error"><p><strong> Your ATM card has been blocked for further transactions. Please contact the XYZ BANK regarding the issue</strong></p></div>
+              <script type="text/javascript">
+                $(document).ready(function() {
+                $('#cardform').hide();
+                window.setTimeout("location.href='/user/'", 2000);
+                });
+              </script>
+              {% else %} {% if cmessage == 3 %}
+              <div class="alert-message error"><p><strong> Your ATM card has been expired. Please contact the XYZ BANK regarding the issue</strong></p></div>
+              <script type="text/javascript">
+                $(document).ready(function() {
+                $('#cardform').hide();
+                window.setTimeout("location.href='/user/'", 2000);
+                });
+              </script>
+              {% endif %} {% endif %} {% endif %}
+              
+              <form name="input" id="cardform" action="." method="post">{% csrf_token %}<label for="xlInput">Card Number &nbsp;</label>
+              <input type="text" class="span3" name="cardnumber" id="cardnumber"/>
+              <div class="actionsNew">
+                <input type="submit" class="btn primary disabled" value="NEXT" />
+              </div>
+              </form>
+
+              </div>
+            </div>
+            <div class="span4">
+              <h3>Secondary content</h3>
+            </div>
+          </div>
+        </div>
+
+      <footer>
+        <p>XYZ Bank : ATM ... Designed by: <strong>Amandeep Kamboj; Bhargav Mangipudi; Parteek Singla; Shashank Soni</strong></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
+

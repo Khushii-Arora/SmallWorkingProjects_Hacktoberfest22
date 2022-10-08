@@ -1,0 +1,67 @@
+<html>
+<head>
+<script type="text/javascript">
+function validateForm(){
+var x=document.forms["input"]["cardnumber"].value;
+if (x==null || x=="")
+  {
+  alert("cardnumber is not filled");
+  return false;
+  }
+if (!IsNumeric(x))
+  {
+  alert("input should be numeric");
+  return false;
+  }
+if (x.length !=12)
+  {
+  alert("cardnumber must be of length 12");
+  return false;
+  }     
+}
+function validate(y){
+var x=document.getElementById(y).value;
+if (x==null || x==""){
+  document.getElementById("demo").innerHTML="CARD NUMBER MUST BE FILLED";
+  }
+if (!IsNumeric(x))
+  {document.getElementById("demo").innerHTML="INPUT SHOULD BE NUMERICAL";
+  }
+else if (x.length !=12)
+  {
+  document.getElementById("demo").innerHTML="INPUT SHOULD BE OF LENGTH 12";
+  }  
+else{
+	document.getElementById("demo").innerHTML="";
+	}     
+}
+function IsNumeric(strString){
+   var strValidChars = "0123456789";
+   var strChar;
+   var blnResult = true;
+
+   if (strString.length == 0) return false;
+
+   //  test strString consists of valid characters listed above
+   for (i = 0; i < strString.length && blnResult == true; i++)
+      {
+      strChar = strString.charAt(i);
+      if (strValidChars.indexOf(strChar) == -1)
+         {
+         blnResult = false;
+         }
+      }
+   return blnResult;
+   }
+</script>
+</head>
+<body>
+<center>
+    <form name="input" action="/user/validatecard/" <!--onsubmit="return validateForm() --> method="get">
+    Card Number: <input type="text" name="cardnumber" id="cardnumber" onchange="validate(this.id)"/>
+    <input type="submit" value="Submit" />
+    </form>
+    <p id="demo"></p>
+</center>
+</body>
+</html>
