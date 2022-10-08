@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20110910T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="0" sun="0"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Mindmap" note="Completed and uploaded on trac on 5th September 2011&#10;Sat 10 Sep 2011, 23:57&#10;" work="0" duration="0" start="20110910T000000Z" end="20110910T000000Z" work-start="20110910T080000Z" percent-complete="100" priority="5" type="milestone" scheduling="fixed-duration"/>
+    <task id="2" name="Planner" note="" work="169200" start="20110911T000000Z" end="20110912T114500Z" work-start="20110911T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20110911T000000Z"/>
+    </task>
+    <task id="3" name="Requirement Analysis" note="" work="838800" start="20110919T000000Z" end="20110926T101500Z" work-start="20110919T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="4" name="Use Case" note="" work="345600" start="20110919T000000Z" end="20110924T170000Z" work-start="20110919T080000Z" percent-complete="75" priority="3" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20110919T000000Z"/>
+      </task>
+      <task id="5" name="User Stories" note="" work="345600" start="20110919T000000Z" end="20110924T170000Z" work-start="20110919T080000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20110919T000000Z"/>
+      </task>
+      <task id="6" name="Validation/SRS" note="" work="147600" start="20110925T000000Z" end="20110926T101500Z" work-start="20110925T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20110925T000000Z"/>
+      </task>
+    </task>
+    <task id="7" name="Design" note="" work="345600" start="20111004T000000Z" end="20111011T170000Z" work-start="20111004T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20111004T000000Z"/>
+      <task id="8" name="Decide classes and structure" note="" work="144000" start="20111004T000000Z" end="20111008T170000Z" work-start="20111004T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20111004T000000Z"/>
+      </task>
+      <task id="9" name="UML Design" note="" work="144000" start="20111004T000000Z" end="20111008T170000Z" work-start="20111004T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20111004T000000Z"/>
+      </task>
+      <task id="10" name="Validation" note="" work="57600" start="20111010T000000Z" end="20111011T170000Z" work-start="20111010T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20111010T000000Z"/>
+      </task>
+    </task>
+    <task id="11" name="Development" note="" work="2044800" start="20111012T000000Z" end="20111115T170000Z" work-start="20111012T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="12" name="Phase 1" note="" work="1123200" start="20111012T000000Z" end="20111101T170000Z" work-start="20111012T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="13" name="Iteration 1" note="" work="547200" start="20111012T000000Z" end="20111021T170000Z" work-start="20111012T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="14" name="Planning/Deciding tasks" note="" work="86400" start="20111012T000000Z" end="20111014T170000Z" work-start="20111012T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <constraint type="start-no-earlier-than" time="20111012T000000Z"/>
+          </task>
+          <task id="15" name="Coding " note="" work="230400" start="20111014T000000Z" end="20111021T170000Z" work-start="20111014T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <constraint type="start-no-earlier-than" time="20111014T000000Z"/>
+          </task>
+          <task id="16" name="Unit Testing" note="" work="230400" start="20111014T000000Z" end="20111021T170000Z" work-start="20111014T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <constraint type="start-no-earlier-than" time="20111014T000000Z"/>
+          </task>
+        </task>
+        <task id="17" name="Iteration 2" note="" work="432000" start="20111022T000000Z" end="20111029T170000Z" work-start="20111022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="18" name="Planning/Deciding tasks" note="" work="86400" start="20111022T000000Z" end="20111024T170000Z" work-start="20111022T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <constraint type="start-no-earlier-than" time="20111022T000000Z"/>
+          </task>
+          <task id="19" name="Coding" note="" work="172800" start="20111024T000000Z" end="20111029T170000Z" work-start="20111024T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <constraint type="start-no-earlier-than" time="20111024T000000Z"/>
+          </task>
+          <task id="20" name="Unit Testing" note="" work="172800" start="20111024T000000Z" end="20111029T170000Z" work-start="20111024T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <constraint type="start-no-earlier-than" time="20111024T000000Z"/>
+          </task>
+        </task>
+        <task id="21" name="Integration/Module Testing" note="" work="86400" start="20111029T000000Z" end="20111031T170000Z" work-start="20111029T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="start-no-earlier-than" time="20111029T000000Z"/>
+        </task>
+        <task id="22" name="Final Documentation" note="" work="28800" start="20111031T000000Z" end="20111031T170000Z" work-start="20111031T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="start-no-earlier-than" time="20111031T000000Z"/>
+        </task>
+        <task id="23" name="Release v1.0" note="" work="28800" start="20111101T000000Z" end="20111101T170000Z" work-start="20111101T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="start-no-earlier-than" time="20111101T000000Z"/>
+        </task>
+      </task>
+      <task id="24" name="Phase 2" note="" work="921600" start="20111102T000000Z" end="20111115T170000Z" work-start="20111102T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="25" name="Iteration 1" note="" work="403200" start="20111102T000000Z" end="20111108T170000Z" work-start="20111102T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="26" name="Planning/Deciding tasks" note="" work="57600" start="20111102T000000Z" end="20111103T170000Z" work-start="20111102T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <constraint type="start-no-earlier-than" time="20111102T000000Z"/>
+          </task>
+          <task id="27" name="Coding" note="" work="172800" start="20111103T000000Z" end="20111108T170000Z" work-start="20111103T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <constraint type="start-no-earlier-than" time="20111103T000000Z"/>
+          </task>
+          <task id="28" name="Unit Testing" note="" work="172800" start="20111103T000000Z" end="20111108T170000Z" work-start="20111103T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <constraint type="start-no-earlier-than" time="20111103T000000Z"/>
+          </task>
+        </task>
+        <task id="29" name="Iteration 2" note="" work="403200" start="20111108T000000Z" end="20111114T170000Z" work-start="20111108T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="30" name="Planning/Decicing tasks" note="" work="57600" start="20111108T000000Z" end="20111109T170000Z" work-start="20111108T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <constraint type="start-no-earlier-than" time="20111108T000000Z"/>
+          </task>
+          <task id="31" name="Coding" note="" work="172800" start="20111109T000000Z" end="20111114T170000Z" work-start="20111109T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <constraint type="start-no-earlier-than" time="20111109T000000Z"/>
+          </task>
+          <task id="32" name="Unit Testing" note="" work="172800" start="20111109T000000Z" end="20111114T170000Z" work-start="20111109T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <constraint type="start-no-earlier-than" time="20111109T000000Z"/>
+          </task>
+        </task>
+        <task id="33" name="Integration/Module Testing" note="" work="57600" start="20111114T000000Z" end="20111115T170000Z" work-start="20111114T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="start-no-earlier-than" time="20111114T000000Z"/>
+        </task>
+        <task id="34" name="Final Documentation" note="" work="28800" start="20111115T000000Z" end="20111115T170000Z" work-start="20111115T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="start-no-earlier-than" time="20111115T000000Z"/>
+        </task>
+        <task id="35" name="Release v2.0" note="" work="28800" start="20111115T000000Z" end="20111115T170000Z" work-start="20111115T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="start-no-earlier-than" time="20111115T000000Z"/>
+        </task>
+      </task>
+    </task>
+    <task id="36" name="Deployment" note="" work="28800" start="20111116T000000Z" end="20111116T170000Z" work-start="20111116T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="37" name="Integrating with other project modules and going live !!" note="" work="28800" start="20111116T000000Z" end="20111116T170000Z" work-start="20111116T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="start-no-earlier-than" time="20111116T000000Z"/>
+      </task>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources>
+    <resource id="1" name="Shashank Soni" short-name="s" type="1" units="0" email="shashanksn@iitrpr.ac.in" note="" std-rate="0"/>
+    <resource id="2" name="Parteek Singla" short-name="p" type="1" units="0" email="parteeks@iitrpr.ac.in" note="" std-rate="0"/>
+    <resource id="3" name="Amandeep Kamboj" short-name="a" type="1" units="0" email="amandeepk@iitrpr.ac.in" note="" std-rate="0"/>
+    <resource id="4" name="Bhargav Mangipudi" short-name="b" type="1" units="0" email="bhargavm@iitrpr.ac.in" note="" std-rate="0"/>
+  </resources>
+  <allocations>
+    <allocation task-id="6" resource-id="1" units="100"/>
+    <allocation task-id="5" resource-id="1" units="100"/>
+    <allocation task-id="2" resource-id="1" units="100"/>
+    <allocation task-id="1" resource-id="1" units="100"/>
+    <allocation task-id="6" resource-id="2" units="100"/>
+    <allocation task-id="4" resource-id="2" units="100"/>
+    <allocation task-id="2" resource-id="2" units="100"/>
+    <allocation task-id="1" resource-id="2" units="100"/>
+    <allocation task-id="6" resource-id="3" units="100"/>
+    <allocation task-id="4" resource-id="3" units="100"/>
+    <allocation task-id="2" resource-id="3" units="100"/>
+    <allocation task-id="1" resource-id="3" units="100"/>
+    <allocation task-id="6" resource-id="4" units="100"/>
+    <allocation task-id="5" resource-id="4" units="100"/>
+    <allocation task-id="2" resource-id="4" units="100"/>
+    <allocation task-id="1" resource-id="4" units="100"/>
+  </allocations>
+</project>
