@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Fruit Slice Game!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="score">
+            Score: <span id="scorevalue">0</span>
+        </div>
+        <div id="trialsLeft">
+
+        </div>
+        <div id="fruitsContainer">
+            <img class="fruit" id="fruit1">
+        </div><br>
+        <div id="instruction"><b>Slice Unhealthy Food!</b></div><br>
+
+        <div id="startreset">Start Game.</div>
+
+        <div id="gameOver"></div>
+    </div>
+    <audio id="slicesound">
+        <source src="./audio/slice.mp3" type="">
+        <source src="./audio/slice.ogg" type="">
+    </audio>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script
+        type="text/javascript">(function () { window['__CF$cv$params'] = { r: '6d50fec608070e54', m: 'dFFMJVVQGow.EXMhFuScEj4vNeeMhjdafk3Tr1VIMfM-1643443943-0-AQ2QttQ1rHHVQQZVmkBmlO9JVEEKWHkKmsekoQXDGoMFvLlrjdzl4/0Y4svJ+wuXdETdk6c7SYsoBY/fiX+mhaoo4cHqs5y8dgyy3vsLQ6pGyHOGWlFZrLrDc3zVaosqazqNnIIoijARKooxM8V6hwpj1Y32y9bSdUXmfgXcK4+YjLcZnTMv/iLe/ug2AZ2qXQ==', s: [0x4271d96856, 0x1139efd179], } })();</script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="./jquery.js"></script>
+</body>
+
+</html>
