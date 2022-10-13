@@ -32,19 +32,23 @@ You can add your projects, or any valid programs(please don't add too basic code
 #### Instructions:
 * Time for your contribution! Follow the steps below:
 * Fork the repository (Top right corner of this repo)
-
+* Clone repository
 ```
 git clone https://github.com/<your_github_user_name>/SmallWorkingProjects_Hacktoberfest22.git
 ```
+* Change directory
 ```
 cd SmallWorkingProjects_Hacktoberfest22
 ```
+* Add the upstream 
 ```
 git remote add upstream https://github.com/Khushii-Arora/SmallWorkingProjects_Hacktoberfest22.git
 ```
+* Check if it is added or not.
 ```
 git remote -v
 ```
+* Pull the change from upstream if any
 ```
 git pull upstream main
 ```
