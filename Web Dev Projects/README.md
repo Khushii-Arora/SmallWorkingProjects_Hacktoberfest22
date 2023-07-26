@@ -1,1 +1,0 @@
-## Projects Related to Web development to be added in this folder

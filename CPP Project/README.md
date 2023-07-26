@@ -1,1 +1,0 @@
-## Projects written in C/C++ to be added in this folder
