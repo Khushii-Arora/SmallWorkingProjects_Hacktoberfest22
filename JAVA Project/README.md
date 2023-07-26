@@ -1,1 +1,0 @@
-## Projects written in Java to be added in this folder
